@@ -261,8 +261,9 @@ a:focus {
 	color: var(--color-content-title-sub);
 	font-size: 4.5vw;
 	display: block;
-	margin-left: 3vw;
+	/* margin-left: 3vw; */
 	line-height: 0.5;
+	text-align: center;
 }
 
 .cursor {
