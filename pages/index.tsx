@@ -11,6 +11,12 @@ export default function Home() {
         <title>Hamburger.pizza</title>
         <meta name="description" content="Hamburger AND pizza?!" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/icon-16x16.png" />
+        {/* 
+        █▄█ ▄▀▄ █▄ ▄█ ██▄ █ █ █▀▄ ▄▀  ██▀ █▀▄ █▀▄ █ ▀█▀ ▀█▀ ▄▀▄ 
+        █ █ █▀█ █ ▀ █ █▄█ ▀▄█ █▀▄ ▀▄█ █▄▄ █▀▄ █▀  █ █▄▄ █▄▄ █▀█ 
+        and isn't that fun and nice for everyone
+         */}
       </Head>
 
       <main className={styles.main}>
