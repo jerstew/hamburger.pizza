@@ -14,66 +14,85 @@
   max-width: 40rem;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.logoPng {
+  display: block;
+  position: absolute;
+  opacity: 0.25;
+  /* ball animation */
+  -webkit-animation: moveX 6s linear 0s infinite alternate,
+    moveY 6.3s linear 0s infinite alternate;
+  -moz-animation: moveX 6s linear 0s infinite alternate,
+    moveY 6.3s linear 0s infinite alternate;
+  -o-animation: moveX 6s linear 0s infinite alternate,
+    moveY 6.3s linear 0s infinite alternate;
+  animation: moveX 6s linear 0s infinite alternate,
+    moveY 6.3s linear 0s infinite alternate;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+/* animation keyframes */
+@-webkit-keyframes moveX {
+  /* screen width - width of image */
+  from {
+    left: 0;
+  }
+  to {
+    left: calc(100% - 108px);
+  }
 }
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+@-moz-keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: calc(100% - 108px);
+  }
 }
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+@-o-keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: calc(100% - 108px);
+  }
 }
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 1.25rem;
+@keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: calc(100% - 108px);
+  }
 }
-
-.title,
-.description {
-  text-align: center;
+@-webkit-keyframes moveY {
+  /* screen height - height of image */
+  from {
+    top: calc(100% - 103px);
+  }
+  to {
+    top: 0;
+  }
 }
-
-.description {
-  margin: 2rem 0;
-  line-height: 1.5;
-  font-size: 1.25rem;
+@-moz-keyframes moveY {
+  from {
+    top: calc(100% - 103px);
+  }
+  to {
+    top: 0;
+  }
 }
-
-.iconPng {
-  margin: 0 0.5rem 0 0;
+@-o-keyframes moveY {
+  from {
+    top: calc(100% - 103px);
+  }
+  to {
+    top: 0;
+  }
 }
-
-.terminalCard header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem 1rem;
-}
-
-.terminalCard p {
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.homeGif {
-  width: auto;
+@keyframes moveY {
+  from {
+    top: calc(100% - 103px);
+  }
+  to {
+    top: 0;
+  }
 }
